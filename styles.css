@@ -1,0 +1,229 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-family: 'Baskervville', serif;
+  padding: 0 100px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  z-index: -1;
+  display: block;
+  height: auto;
+}
+
+
+#img-div {
+  position: relative;
+  margin: 0 90px;
+}
+
+#img-caption, .more {
+  text-align: center;
+}
+
+.column-number {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+.inside {
+  z-index: 0;
+  position: absolute;
+  font-family: Patrick Hand;
+  
+}
+
+.title {
+  right: 10%;
+  top: 15%;
+  font-size: 500%;
+}
+
+.sub-title { 
+  right: 6%;
+  top: 50%;
+  font-size: 200%;
+  font-weight: lighter;
+}
+
+.cheak {
+  background-color: pink;
+  opacity: 0.7;
+  height: 5%;
+  width: 3%;
+  transform: rotate(-20deg);
+  border-radius: 45% 45%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  
+}
+
+.cheak.left {
+  left: 12.5%;
+  top: 46%;
+}
+
+.cheak.right {
+  top: 44%;
+  left: 22.5%;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+}
+
+.l1 {
+  top: 20%;
+  left: 21%;
+}
+
+.l2 {
+  top: 50%;
+  left: 21%;
+}
+
+.l3 {
+  top: 80%;
+  left: 21%;
+}
+
+.l4 {
+  top: 20%;
+  left: 25%;
+}
+
+.l5 {
+  top: 50%;
+  left: 25%;
+}
+
+.l6 {
+  top: 80%;
+  left: 25%;
+}
+
+#img-caption {
+  margin-top: 10px;
+  
+}
+
+#tribute-info {
+ margin-left: 70px;
+ margin-right: 70px;
+ margin-top: 40px;
+}
+
+.grid {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   text-align: justify
+
+}
+
+.column {
+   flex: 1;
+   padding: 20px;
+  line-height: 1.5;
+  position: relative;
+ 
+}
+
+.column p {
+   margin: 1px;
+   text-indent: 2em;
+   
+}
+
+.column-number {
+   position: absolute;
+   bottom: 20px;
+   right: 10px;
+   font-size: 14px; /* Adjust the font size as needed */
+}
+
+.frame {
+border: 3px solid #874c4c52;
+padding-top: 20px;
+z-index: 3;
+background-color: rgb(135, 76, 76, 0.09);
+}
+
+span.highlight {
+  font-family: Patrick Hand;
+  font-weight: bold;
+  background-color: #874c4c52;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.here, .footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.highlight.here {
+  border: 1px solid black;
+}
+
+.footer {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .inside.title {
+    font-size: 180%; 
+ 
+  }
+  
+  .inside.sub-title {
+    font-size: 100%;
+    top: 40%;
+    
+  }
+  
+  .cheak.left {
+    top: 40%;
+  }
+  
+   .cheak.right {
+    top: 38%;
+  }
+  
+
+  .line {
+    font-size: 130%;
+  }
+  
+  #img-caption, .more {
+    font-size: 70%;
+   
+  }
+  
+  span.highlight {
+    font-size: 90%;
+  }
+  
+  .grid, .footer {
+    font-size: 85%;
+  }
+  
+  .more {
+    font-size: 60%;
+  }
+ 
+}
